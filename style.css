@@ -1,61 +1,58 @@
-body {
-    font-family: Arial;
-    background: #f4f6f9;
+/* RESET */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* PAGE LAYOUT */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* HEADER */
 header {
     background: #0a1f44;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 35px 20px;
 }
 
+/* NAVBAR */
 nav {
     background: #122c5f;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
 }
 
 nav a {
     color: white;
-    margin: 0 15px;
+    margin: 0 18px;
     text-decoration: none;
+    font-weight: bold;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* CONTENT */
 section {
-    padding: 30px;
     max-width: 900px;
     margin: auto;
+    padding: 50px 20px;
+    flex: 1;   /* 👈 pushes footer to bottom */
 }
 
-.course-grid {
-    display: flex;
-    gap: 20px;
-}
-
-.course-box {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    width: 30%;
-    text-align: center;
-}
-
-.course-box a {
-    display: inline-block;
-    margin-top: 10px;
-}
-
-form input, form textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-}
-
-button {
+/* FOOTER — PERFECTLY CENTERED */
+footer {
     background: #0a1f44;
     color: white;
-    padding: 10px;
-    border: none;
+    text-align: center;        /* horizontal center */
+    padding: 15px 0;
 }
