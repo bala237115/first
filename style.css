@@ -1,27 +1,16 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Body */
 body {
-    background-color: #f4f6f9;
-    color: #333;
-    line-height: 1.6;
+    font-family: Arial;
+    background: #f4f6f9;
+    margin: 0;
 }
 
-/* Header */
 header {
     background: #0a1f44;
     color: white;
-    padding: 40px 20px;
+    padding: 20px;
     text-align: center;
 }
 
-/* Navigation */
 nav {
     background: #122c5f;
     padding: 10px;
@@ -32,31 +21,41 @@ nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
-    font-weight: bold;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Sections */
 section {
-    padding: 40px 20px;
+    padding: 30px;
     max-width: 900px;
     margin: auto;
 }
 
-/* Headings */
-h2 {
-    color: #0a1f44;
-    margin-bottom: 15px;
+.course-grid {
+    display: flex;
+    gap: 20px;
 }
 
-/* Footer */
-footer {
+.course-box {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+.course-box a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
     background: #0a1f44;
     color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
+    padding: 10px;
+    border: none;
 }
